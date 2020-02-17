@@ -1,10 +1,10 @@
-def CharacterLocator(input,x):
+def CharacterLocator(input,character):
     location=[]
-    y=0
-    for i in input:
-        if i==x:
-            location.append(y)
-        y+=1
+    index=0
+    for char in input:
+        if char==character:
+            location.append(index)
+        index+=1
     return  location
 
 
